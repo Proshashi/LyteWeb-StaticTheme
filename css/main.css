@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Source Sans Pro,sans-serif; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; }
+
+::-webkit-scrollbar-thumb {
+  background: #8888884f; }
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+.top {
+  height: 700px;
+  max-width: 100%;
+  padding: 3.57% 6.6% 18.5% 6.6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  overflow: visible;
+  position: relative; }
+  .top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: -webkit-gradient(linear, left top, right top, from(#ff9278), to(#ffc078));
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 95%); }
+  .top .topDiscription {
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .top .text {
+    display: flex;
+    flex-direction: column;
+    width: 400px; }
+    .top .text .topText {
+      font-size: 26px;
+      color: #fff; }
+    .top .text .topLabel {
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 15px;
+      font-size: 21px; }
+    .top .text .topWork {
+      margin-top: 40px;
+      color: #fff;
+      font-size: 26px; }
+
+.logo {
+  display: flex;
+  color: #fff;
+  align-items: center; }
+  .logo .logoFirst {
+    font-size: 35px;
+    font-weight: 600;
+    border: 2px #fff solid;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    margin-right: 15px; }
+  .logo .logoSecond {
+    font-size: 30px; }
+
+.textButton {
+  background-color: #fff;
+  border-radius: 60px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
+  padding: 6px 20px;
+  margin-right: 5px;
+  color: #ff9278;
+  font-size: 24px;
+  font-weight: 400; }
+
+.__topSignUp {
+  padding: 50px 40px 50px 40px;
+  width: 495px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px -3px rgba(0, 0, 0, 0.16);
+  height: max-content;
+  position: relative;
+  margin-top: 110px;
+  margin-left: 90px;
+  z-index: 200;
+  overflow: visible !important; }
+  .__topSignUp--Heading {
+    font-size: 30px;
+    margin-bottom: 14px;
+    display: inline-block; }
+  .__topSignUp--Label {
+    font-size: 14px;
+    color: #505255; }
+  .__topSignUp--Form {
+    display: flex;
+    flex-direction: column; }
+    .__topSignUp--Form input[required] {
+      width: 100%;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #ccc;
+      margin-top: 45px;
+      font-size: 24px;
+      outline: none;
+      height: 30px; }
+      .__topSignUp--Form input[required]::placeholder {
+        opacity: 0.5; }
+    .__topSignUp--Form__termsCond {
+      font-size: 15px;
+      margin: 45px 0 20px 0; }
+  .__topSignUp--Button {
+    background: linear-gradient(90deg, #00b7ea 0, #87ceeb);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: all .4s;
+    outline: none;
+    border: none; }
+    .__topSignUp--Button:hover {
+      background: linear-gradient(90deg, #87ceeb 0, #00b7ea); }
+  .__topSignUp--Pricing {
+    display: inline-block;
+    margin-top: 40px;
+    color: #505255; }
+
+.__main {
+  position: relative;
+  padding: 0 50px 0 200px;
+  max-width: 100%;
+  margin-top: 25px; }
+  .__main--howItWork {
+    display: flex;
+    flex-direction: column; }
+    .__main--howItWork__header {
+      font-size: 43px;
+      color: #45b3e0;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    .__main--howItWork__emailLabel, .__main--howItWork__tagLabel {
+      font-size: 20px;
+      color: #87ceeb;
+      font-weight: 400; }
+  .__main--workCards__card {
+    margin-top: 60px; }
+    .__main--workCards__card .cardImage {
+      height: 80px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 24px; }
+    .__main--workCards__card .workHeadingImage {
+      height: 75px;
+      width: 75px;
+      display: inline-block;
+      border-radius: 600px;
+      vertical-align: middle;
+      margin-top: -5px; }
+    .__main--workCards__card .workDetailImage {
+      height: 10.22px;
+      width: 30px;
+      display: inline-block;
+      border-radius: 600px;
+      vertical-align: middle;
+      margin-top: -5px; }
+    .__main--workCards__card .workNoticeImage {
+      height: 30px;
+      width: 30px;
+      margin: 0 22.5px;
+      display: inline-block;
+      border-radius: 600px;
+      vertical-align: middle;
+      margin-top: -5px; }
+    .__main--workCards__card--Heading, .__main--workCards__card--detail, .__main--workCards__card--notice {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .__main--workCards__card--Heading .cardLabel .workHeadingLabel {
+      color: #b2b2b2;
+      font-size: 30px;
+      font-weight: 700; }
+    .__main--workCards__card--notice .cardLabel .workNoticeLabel {
+      font-size: 16px;
+      color: #b2b2b2; }
+    .__main--workCards__card .mainDavidRed {
+      color: #ff9278; }
+  .__main--suggestions {
+    font-size: 20px;
+    color: #87ceeb;
+    font-weight: 400;
+    margin-top: 50px; }
+    .__main--suggestions__second {
+      margin-top: 15px; }
+
+.textButtonMain {
+  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.07);
+  line-height: 2;
+  padding: 6px 15px;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 60px;
+  margin-right: 5px; }
+
+.__footer {
+  margin-top: 100px;
+  height: 600px;
+  max-width: 100%;
+  padding: 50px 90px 307px 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  overflow: visible;
+  position: relative; }
+  .__footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: -webkit-gradient(linear, left top, right top, from(#ff9278), to(#ffc078));
+    clip-path: polygon(0 25%, 100% 5%, 100% 100%, 0% 100%); }
+  .__footer .__footerSignUp {
+    padding: 50px 40px 40px;
+    width: 495px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px -3px rgba(0, 0, 0, 0.16);
+    height: max-content;
+    position: relative;
+    margin-top: -110px;
+    left: calc(100% - 495px);
+    z-index: 200;
+    overflow: visible !important; }
+    .__footer .__footerSignUp--Heading {
+      font-size: 30px;
+      margin-bottom: 14px;
+      display: inline-block; }
+    .__footer .__footerSignUp--Label {
+      font-size: 14px;
+      color: #505255; }
+    .__footer .__footerSignUp--Form {
+      display: flex;
+      flex-direction: column; }
+      .__footer .__footerSignUp--Form input[required] {
+        width: 100%;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #ccc;
+        margin-top: 45px;
+        font-size: 24px;
+        outline: none;
+        height: 30px; }
+        .__footer .__footerSignUp--Form input[required]::placeholder {
+          opacity: 0.5; }
+      .__footer .__footerSignUp--Form__termsCond {
+        font-size: 15px;
+        margin: 45px 0 20px 0; }
+    .__footer .__footerSignUp--Button {
+      background: linear-gradient(90deg, #00b7ea 0, #87ceeb);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 12px;
+      border-radius: 6px;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      transition: all .4s;
+      outline: none;
+      border: none; }
+      .__footer .__footerSignUp--Button:hover {
+        background: linear-gradient(90deg, #87ceeb 0, #00b7ea); }
+    .__footer .__footerSignUp--Pricing {
+      display: inline-block;
+      margin-top: 40px;
+      color: #505255; }
+  .__footer--Bottom {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+    left: 0;
+    padding: 15px 93px;
+    border-top: 1px rgba(255, 255, 255, 0.459) solid;
+    color: #fff; }
+    .__footer--Bottom_contact {
+      margin: 0 50px; }
+      .__footer--Bottom_contact .footerContactLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .__footer--Bottom_contact .footerContactLinks a {
+          color: #fff;
+          margin: 5px 10px 5px 0; }
+        .__footer--Bottom_contact .footerContactLinks img {
+          height: 18px;
+          width: 18px; }
+    .__footer--Bottom_termsCond {
+      margin: 0 50px; }
+      .__footer--Bottom_termsCond .first {
+        display: inline-block;
+        margin-bottom: 10px; }
+    .__footer--Bottom_logo {
+      margin-right: auto; }
+  .__footer--copyright {
+    position: absolute;
+    top: 100%;
+    max-width: 100%;
+    text-align: left;
+    font-size: 16px;
+    padding: 15px 0;
+    background-color: #fff;
+    color: #505255; }
+
+input[type="checkbox"]:checked {
+  background-color: #fff !important; }
+
+@media screen and (max-width: 1125px) {
+  .top {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0; }
+    .top::before {
+      clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 93%); }
+    .top .topDiscription {
+      justify-content: center;
+      align-items: center; }
+    .top .text {
+      align-items: flex-start;
+      margin-top: 100px; }
+    .top .__topSignUp {
+      margin-left: 0;
+      margin-top: 50px; }
+  .__footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 0 0;
+    height: fit-content; }
+    .__footer::before {
+      clip-path: polygon(0 23%, 100% 7%, 100% 100%, 0% 100%); }
+    .__footer .__footerSignUp {
+      left: 0; }
+    .__footer--Bottom {
+      position: relative;
+      top: 0;
+      margin-top: 120px;
+      align-items: center;
+      justify-content: center; }
+    .__footer--copyright {
+      position: relative;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      margin: 0; } }
+
+@media screen and (max-width: 850px) {
+  .__main {
+    padding: 0 25px 0 100px; }
+    .__main--howItWork__header {
+      font-size: 30px; }
+    .__main--howItWork__emailLabel, .__main--howItWork__tagLabel {
+      font-size: 18px; }
+    .__main--workCards__card--Heading .cardLabel .workHeadingLabel {
+      font-size: 20px; }
+  .textButtonMain {
+    font-size: 18px; } }
+
+@media screen and (max-width: 720px) {
+  .__main {
+    padding: 0 12.5px 0 25px; }
+    .__main .textButtonMain {
+      line-height: 1.2;
+      margin: 0; } }
+
+@media screen and (max-width: 660px) {
+  .main, .__footerSignUp, .__footerSignUp--Button, .__topSignUp, .__topSignUpButton {
+    width: auto; }
+  .top .text {
+    width: auto;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px; }
+    .top .text .topText {
+      font-size: 20px; }
+    .top .text .topLabel {
+      font-size: 15px; }
+    .top .text .topWork {
+      font-size: 19px; }
+  .__footer {
+    margin: 100px 0 0 0; }
+    .__footer--Bottom {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 200px;
+      margin-bottom: -100px;
+      height: fit-content;
+      padding-bottom: 0;
+      text-align: center; }
+      .__footer--Bottom_logo {
+        margin-right: 0; } }
+
+@media screen and (max-width: 530px) {
+  .__topSignUp {
+    width: 70vw; }
+    .__topSignUp--Heading {
+      font-size: 20px; }
+    .__topSignUp--Lable {
+      font-size: 7px; }
+    .__topSignUp--Form imput[required] {
+      font-size: 14px;
+      width: 65vw; }
+    .__topSignUp--Form__termsCond {
+      font-size: 10px; }
+  .__footer {
+    height: fit-content; }
+    .__footer .__footerSignUp {
+      width: 70vw; }
+      .__footer .__footerSignUp--Heading {
+        font-size: 20px; }
+      .__footer .__footerSignUp--Lable {
+        font-size: 7px; }
+      .__footer .__footerSignUp--Form imput[required] {
+        font-size: 14px;
+        width: 65vw; }
+      .__footer .__footerSignUp--Form__termsCond {
+        font-size: 10px; } }

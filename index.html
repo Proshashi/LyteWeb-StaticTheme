@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lyte</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9e9e84b25.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="topDiscription">
+            <div class="logo">
+                <span class="logoFirst">L</span>
+                <span class="logoSecond">Lyte</span>
+            </div>
+            <div class="text">
+                <span class="topText">
+                   cc: <span class="textButton">David@lyte.ai</span> in your emails
+                </span>
+                <span class="topLabel">
+                        Your email collaboration assistant
+                </span>
+                <span class="topWork">
+                        David manages tasks, reminders, follow-ups and reccuring status checks, in Email
+                </span>
+            </div>
+        </div>
+
+        <div class="__topSignUp">
+            <span class="__topSignUp--Heading">
+                Sign up
+            </span> <br>
+            <span class="__topSignUp--Label">
+                No login, no app install, works within email, in all emails.
+            </span>
+            <form action="#" class="__topSignUp--Form">
+                <input type="email" placeholder="email" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+                <input type="text" placeholder="name" required>
+                <span class="__topSignUp--Form__termsCond">
+                    <input type="checkbox" id="termsCondition">
+                    <label for="termsCondition" style="margin-left: 20px">Terms & Conditions</label>
+                </span>
+                <button class="__topSignUp--Button" type="submit">Start My Free Trial</button>
+            </form>
+            <span class="__topSignUp--Pricing">
+                Pricing $5.99/month | 30 Day Free Trial
+            </span>
+        </div>
+    </div>
+    <div class="__main">
+        <div class="__main--howItWork">
+            <h1 class="__main--howItWork__header">How it works</h1>
+            <span class="__main--howItWork__emailLabel">cc: <span class="textButtonMain">David@lyte.ai</span> in your email</span>
+            <span class="__main--howItWork__tagLabel">Tag david in the body of the email with <span class="textButtonMain">@david [your request]</span></span>
+        </div>
+        <div class="__main--workCards">
+
+            <!-- Status update Card -->
+
+            <div class="__main--workCards__card">
+                <div class="__main--workCards__card--Heading">
+                    <span class="cardImage">
+                        <img src="images/statusUpdate.svg" alt="" class="workHeadingImage">
+                    </span>
+                    <span class="cardLabel">
+                        <h3 class="workHeadingLabel">Status updates</h3>
+                    </span>
+                </div>
+                <div class="__main--workCards__card--detail">
+                    <span class="cardImage">
+                        <img src="images/dots.svg" alt="" class="workDetailImage">
+                    </span>
+                    <span class="cardLabel">
+                        <span class="textButtonMain"><span class="mainDavidRed">@david</span> Get an update from my team every Monday morning at 9am</span>
+                    </span>
+                </div>
+                <div class="__main--workCards__card--notice">
+                    <span class="cardImage">
+                        <img src="images/clock.svg" alt="" class="workNoticeImage">
+                    </span>
+                    <span class="cardLabel">
+                        <span class="workNoticeLabel">David requests an update from everyone in the email thread at the requested time, while keeping you in the loop</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Remainder Card -->
+
+            <div class="__main--workCards__card">
+                    <div class="__main--workCards__card--Heading">
+                        <span class="cardImage">
+                            <img src="images/remainder.svg" alt="" class="workHeadingImage">
+                        </span>
+                        <span class="cardLabel">
+                            <h3 class="workHeadingLabel">Reminders</h3>
+                        </span>
+                    </div>
+                    <div class="__main--workCards__card--detail">
+                        <span class="cardImage">
+                            <img src="images/dots.svg" alt="" class="workDetailImage">
+                        </span>
+                        <span class="cardLabel">
+                            <span class="textButtonMain"><span class="mainDavidRed">@david</span> Remind Guneet to pick up her access badge by 5pm</span>
+                        </span>
+                    </div>
+                    <div class="__main--workCards__card--notice">
+                        <span class="cardImage">
+                            <img src="images/clock.svg" alt="" class="workNoticeImage">
+                        </span>
+                        <span class="cardLabel">
+                            <span class="workNoticeLabel">David reminds Guneet by emailing her in the same email thread at the scheduled time</span>
+                        </span>
+                    </div>
+                </div>
+
+            <!-- Follow-up Card -->
+
+            <div class="__main--workCards__card">
+                <div class="__main--workCards__card--Heading">
+                    <span class="cardImage">
+                        <img src="images/followUp.svg" alt="" class="workHeadingImage">
+                    </span>
+                    <span class="cardLabel">
+                        <h3 class="workHeadingLabel">Follow-up</h3>
+                    </span>
+                </div>
+                <div class="__main--workCards__card--detail">
+                    <span class="cardImage">
+                        <img src="images/dots.svg" alt="" class="workDetailImage">
+                    </span>
+                    <span class="cardLabel">
+                        <span class="textButtonMain"><span class="mainDavidRed">@david</span> Follow-up with Paul on termsheet review next Friday</span>
+                    </span>
+                </div>
+                <div class="__main--workCards__card--notice">
+                    <span class="cardImage">
+                        <img src="images/clock.svg" alt="" class="workNoticeImage">
+                    </span>
+                    <span class="cardLabel">
+                        <span class="workNoticeLabel">If no response is received by the requested date then David follows-up with Paul in the same email thread. If a response is received from Paul then David ignores the follow-up request</span>
+                    </span>
+                </div>
+            </div>
+
+        <!-- Tasks Card -->
+
+            <div class="__main--workCards__card">
+                <div class="__main--workCards__card--Heading">
+                    <span class="cardImage">
+                        <img src="images/tasks.svg" alt="" class="workHeadingImage">
+                    </span>
+                    <span class="cardLabel">
+                        <h3 class="workHeadingLabel">Tasks</h3>
+                    </span>
+                </div>
+                <div class="__main--workCards__card--detail">
+                    <span class="cardImage">
+                        <img src="images/dots.svg" alt="" class="workDetailImage">
+                    </span>
+                    <span class="cardLabel">
+                        <span class="textButtonMain"><span class="mainDavidRed">@david</span> Web design task is due next week by Lilia</span>
+                    </span>
+                </div>
+                <div class="__main--workCards__card--notice">
+                    <span class="cardImage">
+                        <img src="images/clock.svg" alt="" class="workNoticeImage">
+                    </span>
+                    <span class="cardLabel">
+                        <span class="workNoticeLabel">David reminds Lilia before the due date, asks for an update on the due date and follows-up after the due date if the task is not complete, while keeping you in the loop</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="__main--suggestions">
+            <span class="__main--suggestions_first"></span>
+                <span class="textButtonMain">@david stop</span> to stop an action
+            </span>
+            <br>
+            <span class="__main--suggestions_second"></span>
+                <span class="textButtonMain">@david change [your new request]</span> to modify an action
+            </span>    
+        </div>
+    </div>
+    <div class="__footer">
+        <div class="__footerSignUp">
+            <span class="__footerSignUp--Heading">
+                    Sign up
+            </span> <br>
+            <span class="__footerSignUp--Label">
+                No login, no app install, works within email, in all emails.
+            </span>
+            <form action="#" class="__footerSignUp--Form">
+                <input type="email" placeholder="email" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+                <input type="text" placeholder="name" required>
+                <span class="__footerSignUp--Form__termsCond">
+                    <input type="checkbox" id="termsConditionFooter">
+                    <label for="termsConditionFooter" style="margin-left: 20px">Terms & Conditions</label>
+                </span>
+                <button class="__footerSignUp--Button" type="submit">Start My Free Trial</button>
+            </form>
+            <span class="__footerSignUp--Pricing">
+                Pricing $5.99/month | 30 Day Free Trial
+            </span>
+        </div>
+        <div class="__footer--Bottom">
+            <div class="__footer--Bottom_logo">
+                <img src="images/lyteFooterLogo.svg" alt="" height="32px">
+            </div>
+            <div class="__footer--Bottom_contact">
+                <span class="footerContactLabel">Contact us</span>
+                <br>
+                <span class="footerContactLinks">
+                    <a href="https://www.twitter.com">
+                        <img src="images/envelope.svg" alt="mail">
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <img src="images/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <img src="images/linkedin.svg" alt="linkedin">
+                    </a>
+                </span>
+            </div>
+            <div class="__footer--Bottom_termsCond">
+                <span class="first">Terms and Conditions</span>
+                <br>
+                <span class="second">Privacy Policy</span>
+            </div>
+        </div>
+        <div class="__footer--copyright">
+            All Rights Reserved Shashi Gyawali 2018
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@media screen and (max-width: 1125px) {
+    .top {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 0;
+
+        &::before {
+            clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 93%);
+        }
+
+        .topDiscription {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            align-items: flex-start;
+            margin-top: 100px;
+        }
+        
+        .__topSignUp {
+            margin-left: 0;
+            margin-top: 50px;
+        }
+    }
+
+    .__footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 0 0 0;
+        height: fit-content;
+
+        &::before {
+        clip-path: polygon(0 23%, 100% 7%, 100% 100%, 0% 100%);
+        }
+
+        .__footerSignUp {
+            left: 0;
+        }
+
+        &--Bottom {
+            position: relative;
+            top: 0;
+            margin-top: 120px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--copyright {
+            position: relative;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            margin: 0;  
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .__main {
+        padding: 0 25px 0 100px;
+
+        &--howItWork {
+            &__header {
+                font-size: 30px;
+            }
+
+            &__emailLabel, &__tagLabel {
+                font-size: 18px;
+            }
+        }
+
+    &--workCards {
+        &__card {
+            &--Heading .cardLabel .workHeadingLabel {
+                font-size: 20px;
+            }
+        }
+    }
+    }
+
+    .textButtonMain {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .__main {
+        padding: 0 12.5px 0 25px;
+    
+        .textButtonMain {
+            line-height: 1.2;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .main, .__footerSignUp, .__footerSignUp--Button, .__topSignUp, .__topSignUpButton {
+        width: auto;
+    }
+
+    .top .text {
+        width: auto;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+
+            .topText {
+                font-size: 20px;
+            }
+
+            .topLabel {
+                font-size: 15px;
+            }
+
+            .topWork {
+                font-size: 19px;
+            }
+    }
+
+    .__footer {
+        margin: 100px 0 0 0;
+    
+        &--Bottom {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+            margin-bottom: -100px;
+            height: fit-content;
+            padding-bottom: 0;
+            text-align: center;
+        
+            &_logo {
+                margin-right: 0;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+    .__topSignUp{
+
+        width: 70vw;
+        &--Heading {
+            font-size: 20px;
+        }
+
+        &--Lable {
+            font-size: 7px;
+        }
+
+        &--Form {
+            imput[required] {
+                font-size: 14px;
+                width: 65vw;
+            }
+
+            &__termsCond {
+                font-size: 10px;  
+            }
+        }
+    }
+
+    .__footer {
+        height: fit-content;
+        .__footerSignUp {
+            width: 70vw;
+            &--Heading {
+                font-size: 20px;
+            }
+
+            &--Lable {
+                font-size: 7px;
+            }
+
+            &--Form {
+                imput[required] {
+                    font-size: 14px;
+                    width: 65vw;
+                }
+
+                &__termsCond {
+                    font-size: 10px;    
+                }
+            }
+        } 
+    }
+}
